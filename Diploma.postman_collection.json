@@ -1,0 +1,224 @@
+{
+	"info": {
+		"_postman_id": "43e74093-938d-4b28-a994-1381f6659a5e",
+		"name": "Diploma",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34265441"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/users/login/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE5Nzc1NTQ2LCJpYXQiOjE3MTk3NzE5NDYsImp0aSI6IjNiZDI3ZTYzZWEwMzQxMGFiZTMzZGJkNjFjM2RhZWNmIiwidXNlcl9pZCI6OX0.pqkQ6cuPD_nPQ_wjFYXjoE7pXG7At-lO8AUCBYQ_Dco",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"phone\": \"+71231231223\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/users/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/users/login/?sms_confirmation=1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sms_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MTk4NTUyODksIm5iZiI6MTcxOTg1NTI4OSwiZXhwIjoxNzE5ODU1NTg5LCJjcmVkZW50aWFscyI6eyJwaG9uZSI6Iis3MTIzMTIzMTIyMyJ9LCJzZW50X3Ntc19jb2RlIjoiMTIzNCJ9.0WtVysMmg8r6suajBckEUwIB0TcnbYsN95lJrN6EpqI\",\n    \"sms_code\": \"1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/users/login/?sms_confirmation=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"login",
+						""
+					],
+					"query": [
+						{
+							"key": "sms_confirmation",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/users/profile/11/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE5ODU4OTYyLCJpYXQiOjE3MTk4NTUzNjIsImp0aSI6ImQwYTE1ODk0MjVjZDQ5Y2U5MWEyZWEyOTczMDJmN2E4IiwidXNlcl9pZCI6MTF9.bG7TS6lHILs654g3XTTUzpTkMJ0Jt37NJykXcVKMmxI",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/users/profile/11/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"profile",
+						"11",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/users/profiles/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE5ODU4OTYyLCJpYXQiOjE3MTk4NTUzNjIsImp0aSI6ImQwYTE1ODk0MjVjZDQ5Y2U5MWEyZWEyOTczMDJmN2E4IiwidXNlcl9pZCI6MTF9.bG7TS6lHILs654g3XTTUzpTkMJ0Jt37NJykXcVKMmxI",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/users/profiles/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"profiles",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/users/profile/invitation/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE5ODU4OTYyLCJpYXQiOjE3MTk4NTUzNjIsImp0aSI6ImQwYTE1ODk0MjVjZDQ5Y2U5MWEyZWEyOTczMDJmN2E4IiwidXNlcl9pZCI6MTF9.bG7TS6lHILs654g3XTTUzpTkMJ0Jt37NJykXcVKMmxI",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"invite_code\": \"1bea18\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/users/profile/invitation/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"profile",
+						"invitation",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/users/profiles/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE5ODU4OTYyLCJpYXQiOjE3MTk4NTUzNjIsImp0aSI6ImQwYTE1ODk0MjVjZDQ5Y2U5MWEyZWEyOTczMDJmN2E4IiwidXNlcl9pZCI6MTF9.bG7TS6lHILs654g3XTTUzpTkMJ0Jt37NJykXcVKMmxI",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/users/profiles/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"profiles",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
